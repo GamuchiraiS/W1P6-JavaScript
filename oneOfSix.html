@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<script type="text/javascript">
+	var month = prompt("Please enter a month: ");
+	month = month.toLowerCase(); 
+	var day = prompt("Please enter a day: "); 
+	var season; 
+
+	if (month == "january" || month == "february"
+        || month == "march" || month == "december"){
+                
+    	season = "summer";
+    }
+
+    else if (month == "june" || month == "april"
+        || month == "march" || month == "may"){
+                
+        season = "autumn";
+    }
+
+    else if (month == "june" || month == "july"
+        || month == "august" || month == "september"){
+                
+        season = "winter";
+    }
+
+   else {
+                
+        season = "spring";
+    }
+
+    if (month == "march" && day > 20){
+                
+        season = "autumn";
+    }
+
+    else if (month == "june" && day > 20){
+                
+        season = "winter";
+    }
+
+    else if (month == "september" && day > 20){
+                
+        season = "spring";
+    }
+
+    else if (month == "december" && day > 20){
+                
+        season = "summer";
+    }
+
+    window.alert("The season is: " + season);
+</script>
+</head>
+<body>	
+</body>	
+</html>
